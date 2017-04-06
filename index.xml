@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>sanjay-saxena.io</title>
+      <title>sanjay-saxena.github.io</title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>https://sanjay-saxena.io/index.xml</link>
+    <link>https://sanjay-saxena.github.io/index.xml</link>
     <language>en-us</language>
     <author>Sanjay Saxena</author>
     <copyright>2017 Sanjay Saxena</copyright>
@@ -12,10 +12,10 @@
     
     <item>
       <title>First Blog with Hugo</title>
-      <link>https://sanjay-saxena.io/2017/04/first/</link>
+      <link>https://sanjay-saxena.github.io/2017/04/first/</link>
       <pubDate>Thu, 06 Apr 2017 11:31:32 PDT</pubDate>
       <author>Sanjay Saxena</author>
-      <guid>https://sanjay-saxena.io/2017/04/first/</guid>
+      <guid>https://sanjay-saxena.github.io/2017/04/first/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

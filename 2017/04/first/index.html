@@ -92,7 +92,7 @@
 
 <p>Having decided to create a static HTML site running on <a href="https://github.com">Github</a> using <a href="http://hugo.spf13.com/">Hugo</a>, I wasn&rsquo;t sure how successful my efforts would be as I didn&rsquo;t know <a href="https://golang.org/">Golang</a> and the thought of handcrafting HTML pages and CSS style classes wasn&rsquo;t too appealing. Then, I stumbled upon <a href="https://github.com/natefinch">Nate Finch</a>&rsquo;s excellent posts at <a href="https://nfp.io">nfp.io</a> to make me a true believer in <a href="http://hugo.spf13.com/">Hugo</a>. Using the layouts and the theme templates from Nate&rsquo;s Github <a href="https://github.com/natefinch/npf">repo</a> as the starting point, I was able to personalize them to create the code for my static HTML site. Though I have a long ways to go to automate things using Wercker for CI and other hooks, I think I am in much better shape as I got the basic stuff working.</p>
 
-<p>This blog includes steps that one can take create a static HTML site running on <a href="https://github.com">Github</a> using <a href="http://hugo.spf13.com/">Hugo</a>. To be able to create a static HTML site on <a href="https://github.com">Github</a>, you must sign-up/register with <a href="https://github.com">Github</a> and get a username. In the remainder of this post, treat <code>&lt;username&gt;</code> as a placeholder for your <a href="https://github.com">Github</a> username.</p>
+<p>This blog includes steps that one can take to create a static HTML site running on <a href="https://github.com">Github</a> using <a href="http://hugo.spf13.com/">Hugo</a>. To be able to create a static HTML site on <a href="https://github.com">Github</a>, you must sign-up/register with <a href="https://github.com">Github</a> and get a username. In the remainder of this post, treat <code>&lt;username&gt;</code> as a placeholder for your <a href="https://github.com">Github</a> username.</p>
 
 <h2 id="install-hugo">Install Hugo</h2>
 
@@ -166,15 +166,16 @@ $ cp -r /tmp/nfp/static ~/Workdir/&lt;username&gt;-hugo/
 <li>URLs to social media sites using your own details</li>
 </ul>
 
-<h3 id="personalize-templates">Personalize Templates</h3>
+<h3 id="update-other-files">Update Other Files</h3>
 
-<p>Here are some of the files that you need to update with your details:</p>
+<p>Here are some of the other files that you need to update:</p>
 
 <ul>
 <li><code>~/Workdir/&lt;username&gt;-hugo/README.md</code>: Update the links and the repository names.</li>
 <li><code>~/Workdir/&lt;username&gt;-hugo/static/README.md</code>: This README.md will get copied to the <code>public</code> folder when the site is generated and will end up in the content root of your generated site. Update the links using your site specific details.</li>
 <li><code>~/Workdir/&lt;username&gt;-hugo/static/CNAME</code>: If you have a vanity domain name registered with a DNS provider, update this file with your domain name. This file also gets copied to the <code>public</code> folder when the site is generated and will end up in the content root of your generated site. If you do not have a domain name registered and are planning on using <code>https://&lt;username&gt;.github.io</code> to server your content, then you should delete this file.</li>
 <li><code>~/Workdir/&lt;username&gt;-hugo/themes/hyde/layouts/chrome/sidebar.html</code>: Update the links for social networking sites with your information. Also, update the copyright and other boilerplate information.</li>
+<li><code>~/Workdir/&lt;username-hugo&gt;/themes/hyde/layouts/chrome/head.html</code>: Replace reference to the obsoleted API <code>RSSlink</code> with <code>RSSLink</code> to avoid seeing an error while building the static site.</li>
 </ul>
 
 <h3 id="merge-changes">Merge Changes</h3>

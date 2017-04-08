@@ -24,7 +24,7 @@
 
 &lt;p&gt;Having decided to create a static HTML site running on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; using &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;, I wasn&amp;rsquo;t sure how successful my efforts would be as I didn&amp;rsquo;t know &lt;a href=&#34;https://golang.org/&#34;&gt;Golang&lt;/a&gt; and the thought of handcrafting HTML pages and CSS style classes wasn&amp;rsquo;t too appealing. Then, I stumbled upon &lt;a href=&#34;https://github.com/natefinch&#34;&gt;Nate Finch&lt;/a&gt;&amp;rsquo;s excellent posts at &lt;a href=&#34;https://nfp.io&#34;&gt;nfp.io&lt;/a&gt; to make me a true believer in &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. Using the layouts and the theme templates from Nate&amp;rsquo;s Github &lt;a href=&#34;https://github.com/natefinch/npf&#34;&gt;repo&lt;/a&gt; as the starting point, I was able to personalize them to create the code for my static HTML site. Though I have a long ways to go to automate things using Wercker for CI and other hooks, I think I am in much better shape as I got the basic stuff working.&lt;/p&gt;
 
-&lt;p&gt;This blog includes steps that one can take create a static HTML site running on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; using &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. To be able to create a static HTML site on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;, you must sign-up/register with &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; and get a username. In the remainder of this post, treat &lt;code&gt;&amp;lt;username&amp;gt;&lt;/code&gt; as a placeholder for your &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; username.&lt;/p&gt;
+&lt;p&gt;This blog includes steps that one can take to create a static HTML site running on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; using &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. To be able to create a static HTML site on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;, you must sign-up/register with &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; and get a username. In the remainder of this post, treat &lt;code&gt;&amp;lt;username&amp;gt;&lt;/code&gt; as a placeholder for your &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; username.&lt;/p&gt;
 
 &lt;h2 id=&#34;install-hugo&#34;&gt;Install Hugo&lt;/h2&gt;
 
@@ -98,15 +98,16 @@ $ cp -r /tmp/nfp/static ~/Workdir/&amp;lt;username&amp;gt;-hugo/
 &lt;li&gt;URLs to social media sites using your own details&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;personalize-templates&#34;&gt;Personalize Templates&lt;/h3&gt;
+&lt;h3 id=&#34;update-other-files&#34;&gt;Update Other Files&lt;/h3&gt;
 
-&lt;p&gt;Here are some of the files that you need to update with your details:&lt;/p&gt;
+&lt;p&gt;Here are some of the other files that you need to update:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;~/Workdir/&amp;lt;username&amp;gt;-hugo/README.md&lt;/code&gt;: Update the links and the repository names.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;~/Workdir/&amp;lt;username&amp;gt;-hugo/static/README.md&lt;/code&gt;: This README.md will get copied to the &lt;code&gt;public&lt;/code&gt; folder when the site is generated and will end up in the content root of your generated site. Update the links using your site specific details.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;~/Workdir/&amp;lt;username&amp;gt;-hugo/static/CNAME&lt;/code&gt;: If you have a vanity domain name registered with a DNS provider, update this file with your domain name. This file also gets copied to the &lt;code&gt;public&lt;/code&gt; folder when the site is generated and will end up in the content root of your generated site. If you do not have a domain name registered and are planning on using &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt; to server your content, then you should delete this file.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;~/Workdir/&amp;lt;username&amp;gt;-hugo/themes/hyde/layouts/chrome/sidebar.html&lt;/code&gt;: Update the links for social networking sites with your information. Also, update the copyright and other boilerplate information.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~/Workdir/&amp;lt;username-hugo&amp;gt;/themes/hyde/layouts/chrome/head.html&lt;/code&gt;: Replace reference to the obsoleted API &lt;code&gt;RSSlink&lt;/code&gt; with &lt;code&gt;RSSLink&lt;/code&gt; to avoid seeing an error while building the static site.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;merge-changes&#34;&gt;Merge Changes&lt;/h3&gt;

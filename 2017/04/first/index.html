@@ -159,7 +159,7 @@ $ cp -r /tmp/nfp/static ~/Workdir/&lt;username&gt;-hugo/
 
 <h3 id="merge-changes">Merge Changes</h3>
 
-<p>Once the scaffolding is created, you can merge it to repository as shown below:</p>
+<p>Once the scaffolding is created, you can push it to <code>https://github.com/&lt;username&gt;/&lt;username&gt;-hugo</code> repository as shown below:</p>
 
 <pre><code>$ cd ~/Workdir/&lt;username&gt;-hugo
 $ git add .
@@ -167,7 +167,7 @@ $ git commit -m &quot;Initial commit&quot;
 $ git push -u origin master
 </code></pre>
 
-<p>At this point, your environemnt is ready and you can create content.</p>
+<p>At this point, your environment is ready and you can create content.</p>
 
 <h2 id="add-hello-world-blog">Add Hello World Blog</h2>
 
@@ -191,7 +191,6 @@ Hello World using Hugo
 ======================
 
 My first flog with Hugo!
-
 </code></pre>
 
 <h2 id="preview-content">Preview Content</h2>
@@ -210,14 +209,13 @@ $ hugo server --buildDrafts
 
 <pre><code>$ cd ~/Workdir/&lt;username&gt;-hugo
 $ hugo
-
 </code></pre>
 
 <p>This will result in the static HTML artifacts to be generated in the <code>public</code> sub-folder that is a symbolic-link to <code>../&lt;username&gt;.github.io</code> folder.</p>
 
 <h2 id="merge-changes-1">Merge Changes</h2>
 
-<p>Note that the <code>hello-world.md</code> will be merged/pushed to <code>https://github.com/&lt;username&gt;/&lt;username&gt;-hugo</code> repository and the generated content will be merged/pushed to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code> repository.</p>
+<p>Note that the <code>hello-world.md</code> will be merged/pushed to <code>https://github.com/&lt;username&gt;/&lt;username&gt;-hugo</code> repository and the generated content in the <code>public</code> sub-folder will be merged/pushed to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code> repository.</p>
 
 <p>Here are the steps to merge <code>hello-world.md</code> to <code>https://github.com/&lt;username&gt;/&lt;username&gt;-hugo</code> repository:</p>
 
@@ -225,7 +223,6 @@ $ hugo
 $ git add blog/hello-world.md
 $ git commit -m &quot;Added hello-world.md&quot;
 $ git push -u origin master
-
 </code></pre>
 
 <p>Here are the steps to merge generated artifacts to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code> repository:</p>
@@ -234,12 +231,11 @@ $ git push -u origin master
 $ git add .   // only needed to be done the first time
 $ git commit -am &quot;First checkin with Hello World blog&quot;
 $ git push -u origin master
-
 </code></pre>
 
 <p>Load <code>https://&lt;username&gt;.github.io</code> in your browser and checkout your shiny little site!</p>
 
-<p>From this point on, whenever you need to add a new post, it&rsquo;s just lather, rinse, and repeat the aforementioned steps outlined for adding hello world blog!</p>
+<p>From this point on, whenever you need to add a new post, it&rsquo;s just lather, rinse, and repeat the aforementioned steps outlined for adding the Hello World blog!</p>
 
     
 

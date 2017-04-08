@@ -91,7 +91,7 @@ $ cp -r /tmp/nfp/static ~/Workdir/&amp;lt;username&amp;gt;-hugo/
 
 &lt;h3 id=&#34;merge-changes&#34;&gt;Merge Changes&lt;/h3&gt;
 
-&lt;p&gt;Once the scaffolding is created, you can merge it to repository as shown below:&lt;/p&gt;
+&lt;p&gt;Once the scaffolding is created, you can push it to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository as shown below:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo
 $ git add .
@@ -99,7 +99,7 @@ $ git commit -m &amp;quot;Initial commit&amp;quot;
 $ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;At this point, your environemnt is ready and you can create content.&lt;/p&gt;
+&lt;p&gt;At this point, your environment is ready and you can create content.&lt;/p&gt;
 
 &lt;h2 id=&#34;add-hello-world-blog&#34;&gt;Add Hello World Blog&lt;/h2&gt;
 
@@ -123,7 +123,6 @@ Hello World using Hugo
 ======================
 
 My first flog with Hugo!
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;preview-content&#34;&gt;Preview Content&lt;/h2&gt;
@@ -142,14 +141,13 @@ $ hugo server --buildDrafts
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo
 $ hugo
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This will result in the static HTML artifacts to be generated in the &lt;code&gt;public&lt;/code&gt; sub-folder that is a symbolic-link to &lt;code&gt;../&amp;lt;username&amp;gt;.github.io&lt;/code&gt; folder.&lt;/p&gt;
 
 &lt;h2 id=&#34;merge-changes-1&#34;&gt;Merge Changes&lt;/h2&gt;
 
-&lt;p&gt;Note that the &lt;code&gt;hello-world.md&lt;/code&gt; will be merged/pushed to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository and the generated content will be merged/pushed to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository.&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code&gt;hello-world.md&lt;/code&gt; will be merged/pushed to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository and the generated content in the &lt;code&gt;public&lt;/code&gt; sub-folder will be merged/pushed to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository.&lt;/p&gt;
 
 &lt;p&gt;Here are the steps to merge &lt;code&gt;hello-world.md&lt;/code&gt; to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository:&lt;/p&gt;
 
@@ -157,7 +155,6 @@ $ hugo
 $ git add blog/hello-world.md
 $ git commit -m &amp;quot;Added hello-world.md&amp;quot;
 $ git push -u origin master
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Here are the steps to merge generated artifacts to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository:&lt;/p&gt;
@@ -166,12 +163,11 @@ $ git push -u origin master
 $ git add .   // only needed to be done the first time
 $ git commit -am &amp;quot;First checkin with Hello World blog&amp;quot;
 $ git push -u origin master
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Load &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt; in your browser and checkout your shiny little site!&lt;/p&gt;
 
-&lt;p&gt;From this point on, whenever you need to add a new post, it&amp;rsquo;s just lather, rinse, and repeat the aforementioned steps outlined for adding hello world blog!&lt;/p&gt;
+&lt;p&gt;From this point on, whenever you need to add a new post, it&amp;rsquo;s just lather, rinse, and repeat the aforementioned steps outlined for adding the Hello World blog!&lt;/p&gt;
 </description>
     </item>
     

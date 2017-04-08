@@ -110,7 +110,7 @@ $ hugo new blog/hello-world.md
 $ cd content/blog
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Edit &lt;code&gt;hello-world.md&lt;/code&gt; by changing &lt;code&gt;draft = true&lt;/code&gt; to &lt;code&gt;draft = false&lt;/code&gt;. Also, update the &lt;code&gt;title&lt;/code&gt; by making it more user friendly as shown below:&lt;/p&gt;
+&lt;p&gt;Edit &lt;code&gt;hello-world.md&lt;/code&gt; by changing &lt;code&gt;draft = true&lt;/code&gt; to &lt;code&gt;draft = false&lt;/code&gt;. Also, update the &lt;code&gt;title&lt;/code&gt; by making it more user friendly and use markdown syntax to add a title and text as shown below:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;+++
 type = &amp;quot;post&amp;quot;

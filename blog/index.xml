@@ -165,7 +165,7 @@ $ git commit -am &amp;quot;First checkin with Hello World blog&amp;quot;
 $ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Load &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt; in your browser and checkout your shiny little site!&lt;/p&gt;
+&lt;p&gt;Load &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt; in your browser and checkout your shiny little site! If you want to use a vanity domain name instead of &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt;, then you need to register with a DNS provider and follow these &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog#using-a-custom-domain&#34;&gt;instructions&lt;/a&gt; adding your custom domain to your Github site.&lt;/p&gt;
 
 &lt;p&gt;From this point on, whenever you need to add a new post, it&amp;rsquo;s just lather, rinse, and repeat the aforementioned steps outlined for adding the Hello World blog!&lt;/p&gt;
 </description>

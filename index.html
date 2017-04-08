@@ -105,7 +105,7 @@
 
 <p>Having decided to create a static HTML site running on <a href="https://github.com">Github</a> using <a href="http://hugo.spf13.com/">Hugo</a>, I wasn&rsquo;t sure how successful my efforts would be as I didn&rsquo;t know <a href="https://golang.org/">Golang</a> and the thought of handcrafting HTML pages and CSS style classes wasn&rsquo;t too appealing. Then, I stumbled upon <a href="https://github.com/natefinch">Nate Finch</a>&rsquo;s excellent posts at <a href="https://nfp.io">nfp.io</a> to make me a true believer in <a href="http://hugo.spf13.com/">Hugo</a>. Using the layouts and the theme templates from Nate&rsquo;s Github <a href="https://github.com/natefinch/npf">repo</a> as the starting point, I was able to personalize them to create the code for my static HTML site. Though I have a long ways to go to automate things using Wercker for CI and other hooks, I think I am in much better shape as I got the basic stuff working.</p>
 
-<p>This blog includes steps that one can take create a static HTML site running on <a href="https://github.com">Github</a> using <a href="http://hugo.spf13.com/">Hugo</a>. To be able to create a static HTML site on <a href="https://github.com">Github</a>, you must sign-up/register with <a href="https://github.com">Github</a> and get a username.</p>
+<p>This blog includes steps that one can take create a static HTML site running on <a href="https://github.com">Github</a> using <a href="http://hugo.spf13.com/">Hugo</a>. To be able to create a static HTML site on <a href="https://github.com">Github</a>, you must sign-up/register with <a href="https://github.com">Github</a> and get a username. In the remainder of this post, treat <code>&lt;username&gt;</code> as a placeholder for your <a href="https://github.com">Github</a> username.</p>
 
 <h2 id="install-hugo">Install Hugo</h2>
 
@@ -119,6 +119,10 @@
 <li>&lt;username&gt;-hugo: This repository will contain the source code for your site such as templates, etc.</li>
 <li>&lt;username&gt;.github.io: Name of this repository must follow the convention. This repo will contain the actual artifacts such as HTML, CSS, etc. that will be served up when it is accessed using https://&lt;username&gt;.github.io URL.</li>
 </ul>
+
+<h2 id="register-site-with-disgus">Register Site with Disgus</h2>
+
+<p><a href="http://hugo.spf13.com/">Hugo</a> has inbuilt support for <a href="https://disqus.com/">Disgus</a> to manage comments on any of the content  that is served from your generated static site. While registering your site with <a href="https://disqus.com/">Disgus</a>, you can specify the site name as either <code>&lt;username&gt;.github.io</code> or your own vanity domain name to create a <a href="https://disqus.com/">Disgus</a> shortname. Then, all you need to do is specify the shortname in <a href="http://hugo.spf13.com/">Hugo</a>&rsquo;s <code>config.toml</code> using <code>disgusShortname</code> parameter.</p>
 
 <h2 id="setup-working-environment">Setup Working Environment</h2>
 
@@ -141,7 +145,7 @@ $ git pull origin master
 
 <h3 id="create-symbolic-link">Create symbolic link</h3>
 
-<p>To generate the static HTML content, you will have to execute <code>hugo</code> command from <code>&lt;username&gt;-hugo</code> folder. By default, the static artifacts are generated in sub-folder named <code>public</code>. These artifacts will have to merged/pushed to the <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code> repository. To make this a bit easier, we can create a symbolic link as shown below:</p>
+<p>To generate the static HTML content, you will have to execute <code>hugo</code> command from <code>&lt;username&gt;-hugo</code> folder. By default, <code>hugo</code> generates the static artifacts in a sub-folder named <code>public</code>. These artifacts will have to merged/pushed to the <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code> repository. To make this a bit easier, we can create a symbolic link as shown below:</p>
 
 <pre><code>$ cd ~/Workdir
 $ git clone https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git
@@ -164,11 +168,27 @@ $ cp -r /tmp/nfp/static ~/Workdir/&lt;username&gt;-hugo/
 
 <h3 id="update-config-toml">Update config.toml</h3>
 
-<p>You can update the minimal <code>~/Workdir/&lt;username&gt;-hugo/config.toml</code> that Hugo generated. For inspiration, you can look at Nate&rsquo;s <code>/tmp/npf/config.toml</code>.</p>
+<p>You can update the minimal <code>~/Workdir/&lt;username&gt;-hugo/config.toml</code> that Hugo generated. For inspiration, you can look at Nate&rsquo;s <code>/tmp/npf/config.toml</code>. You should certainly update the following site attributes and parameters in:</p>
+
+<ul>
+<li><code>baseURL</code></li>
+<li><code>title</code></li>
+<li><code>description</code></li>
+<li><code>disgusShortname</code></li>
+<li><code>copyright</code></li>
+<li>URLs to social media sites using your own details</li>
+</ul>
 
 <h3 id="personalize-templates">Personalize Templates</h3>
 
-<p>You should also personalize <code>~/Workdir/&lt;username&gt;-hugo/themes/hyde/layouts/chrome/sidebar.html</code> with your details.</p>
+<p>Here are some of the files that you need to update with your details:</p>
+
+<ul>
+<li><code>~/Workdir/&lt;username&gt;-hugo/README.md</code>: Update the links and the repository names.</li>
+<li><code>~/Workdir/&lt;username&gt;-hugo/static/README.md</code>: This README.md will get copied to the <code>public</code> folder when the site is generated and will end up in the content root of your generated site. Update the links using your site specific details.</li>
+<li><code>~/Workdir/&lt;username&gt;-hugo/static/CNAME</code>: If you have a vanity domain name registered with a DNS provider, update this file with your domain name. This file also gets copied to the <code>public</code> folder when the site is generated and will end up in the content root of your generated site. If you do not have a domain name registered and are planning on using <code>https://&lt;username&gt;.github.io</code> to server your content, then you should delete this file.</li>
+<li><code>~/Workdir/&lt;username&gt;-hugo/themes/hyde/layouts/chrome/sidebar.html</code>: Update the links for social networking sites with your information. Also, update the copyright and other boilerplate information.</li>
+</ul>
 
 <h3 id="merge-changes">Merge Changes</h3>
 
@@ -241,7 +261,7 @@ $ git push -u origin master
 <p>Here are the steps to merge generated artifacts to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code> repository:</p>
 
 <pre><code>$ cd ~/Workdir/&lt;username&gt;-hugo/public
-$ git add .   // only first time after that use &quot;git status&quot; to add new folders
+$ git add .
 $ git commit -am &quot;First checkin with Hello World blog&quot;
 $ git push -u origin master
 </code></pre>

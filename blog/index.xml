@@ -172,7 +172,7 @@ $ hugo
 &lt;p&gt;Here are the steps to merge &lt;code&gt;hello-world.md&lt;/code&gt; to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo
-$ git add blog/hello-world.md
+$ git add .
 $ git commit -m &amp;quot;Added hello-world.md&amp;quot;
 $ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;

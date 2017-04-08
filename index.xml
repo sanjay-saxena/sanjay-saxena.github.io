@@ -20,7 +20,7 @@
 
 &lt;p&gt;When I was asked to create a blog site, I started researching the popular blogging platforms. However, I was getting overwhelmed while trying to understand the pros/cons of paid vs free platforms and the strategies of hosted vs self-hosted and the issues with each of them. That is when I came across &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; in a comment section of one of the blogs that I was reading. And, according to the comment, the only thing that was needed to create a site using &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; is a &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; account.&lt;/p&gt;
 
-&lt;p&gt;Since I already have a &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; account, it appealed to the developer in me and I decided to investigate &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. As part of my investigation, when I learnt that &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; is not only free but the generated site is also fast(because of static assets) and served directly off of &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; using https://&lt;username&gt;.github.io URL, I was sold! But, when I learnt that &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; allows content to be created using &lt;a href=&#34;http://github.github.com/github-flavored-markdown/&#34;&gt;Markdown&lt;/a&gt;, I was blown away!&lt;/p&gt;
+&lt;p&gt;Since I already have a &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; account, it appealed to the developer in me and I decided to investigate &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. As part of my investigation, when I learnt that &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; is not only free but the generated site is also fast(because of static assets) and served directly off of &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; using https://&amp;lt;username&amp;gt;.github.io URL, I was sold! But, when I learnt that &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; allows content to be created using &lt;a href=&#34;http://github.github.com/github-flavored-markdown/&#34;&gt;Markdown&lt;/a&gt;, I was blown away!&lt;/p&gt;
 
 &lt;p&gt;Having decided to create a static HTML site running on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; using &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;, I wasn&amp;rsquo;t sure how successful my efforts would be as I didn&amp;rsquo;t know &lt;a href=&#34;https://golang.org/&#34;&gt;Golang&lt;/a&gt; and the thought of handcrafting HTML pages and CSS style classes wasn&amp;rsquo;t too appealing. Then, I stumbled upon &lt;a href=&#34;https://github.com/natefinch&#34;&gt;Nate Finch&lt;/a&gt;&amp;rsquo;s excellent posts at &lt;a href=&#34;https://nfp.io&#34;&gt;nfp.io&lt;/a&gt; to make me a true believer in &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. Using the layouts and the theme templates from Nate&amp;rsquo;s Github &lt;a href=&#34;https://github.com/natefinch/npf&#34;&gt;repo&lt;/a&gt; as the starting point, I was able to personalize them to create the code for my static HTML site. Though I have a long ways to go to automate things using Wercker for CI and other hooks, I think I am in much better shape as I got the basic stuff working.&lt;/p&gt;
 
@@ -35,11 +35,11 @@
 &lt;p&gt;Sign into &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; and create the following two public repositories and select the checkbox to initialize the repository with a README:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;username&gt;-hugo: This repository will contain the source code for your site such as templates, etc.&lt;/li&gt;
-&lt;li&gt;&lt;username&gt;.github.io: Name of this repository must follow the convention. This repo will contain the actual artifacts such as HTML, CSS, etc. that will be served up when it is accessed using https://&lt;username&gt;.github.io URL.&lt;/li&gt;
+&lt;li&gt;&amp;lt;username&amp;gt;-hugo: This repository will contain the source code for your site such as templates, etc.&lt;/li&gt;
+&lt;li&gt;&amp;lt;username&amp;gt;.github.io: Name of this repository must follow the convention. This repo will contain the actual artifacts such as HTML, CSS, etc. that will be served up when it is accessed using https://&amp;lt;username&amp;gt;.github.io URL.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;working-environment&#34;&gt;Working Environment&lt;/h2&gt;
+&lt;h2 id=&#34;setup-working-environment&#34;&gt;Setup Working Environment&lt;/h2&gt;
 
 &lt;p&gt;Once the repositories are created, here are the steps for creating a working environment that would allow you to create content:&lt;/p&gt;
 
@@ -60,7 +60,7 @@ $ git pull origin master
 
 &lt;h3 id=&#34;create-symbolic-link&#34;&gt;Create symbolic link&lt;/h3&gt;
 
-&lt;p&gt;To generate the static HTML content, you will have to execute &lt;code&gt;hugo&lt;/code&gt; command from &lt;code&gt;&amp;lt;username&amp;gt;-hugo&lt;/code&gt; folder. By default, the static artifacts are generated in sub-folder named &lt;code&gt;public&lt;/code&gt;. These artifacts will have to merged/pushed to the &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository. To make this a bit easier, we can create a symbolic link as shown below:&lt;/p&gt;
+&lt;p&gt;To generate the static HTML content, you will have to execute &lt;code&gt;hugo&lt;/code&gt; command from &lt;code&gt;&amp;lt;username&amp;gt;-hugo&lt;/code&gt; folder. By default, the static artifacts are generated in sub-folder named &lt;code&gt;public&lt;/code&gt;. These artifacts will have to merged/pushed to the &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository. To make this a bit easier, we can create a symbolic link as shown below:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir
 $ git clone https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io.git
@@ -91,7 +91,7 @@ $ cp -r /tmp/nfp/static ~/Workdir/&amp;lt;username&amp;gt;-hugo/
 
 &lt;h3 id=&#34;merge-changes&#34;&gt;Merge Changes&lt;/h3&gt;
 
-&lt;p&gt;Once the scaffolding is created, you can merge them to repository as shown below:&lt;/p&gt;
+&lt;p&gt;Once the scaffolding is created, you can merge it to repository as shown below:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo
 $ git add .
@@ -99,7 +99,9 @@ $ git commit -m &amp;quot;Initial commit&amp;quot;
 $ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;add-hello-world-blog-entry&#34;&gt;Add hello-world blog entry&lt;/h2&gt;
+&lt;p&gt;At this point, your environemnt is ready and you can create content.&lt;/p&gt;
+
+&lt;h2 id=&#34;add-hello-world-blog&#34;&gt;Add Hello World Blog&lt;/h2&gt;
 
 &lt;p&gt;Now that you environment is all set, you can add the first blog entry using the following command:&lt;/p&gt;
 
@@ -147,9 +149,9 @@ $ hugo
 
 &lt;h2 id=&#34;merge-changes-1&#34;&gt;Merge Changes&lt;/h2&gt;
 
-&lt;p&gt;Note that the &lt;code&gt;hello-world.md&lt;/code&gt; will be merged/pushed to &lt;code&gt;&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository and the generated content will be merged/pushed to &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository.&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code&gt;hello-world.md&lt;/code&gt; will be merged/pushed to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository and the generated content will be merged/pushed to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository.&lt;/p&gt;
 
-&lt;p&gt;Here are the steps to merge &lt;code&gt;hello-world.md&lt;/code&gt; to &lt;code&gt;&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository:&lt;/p&gt;
+&lt;p&gt;Here are the steps to merge &lt;code&gt;hello-world.md&lt;/code&gt; to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;-hugo&lt;/code&gt; repository:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo
 $ git add blog/hello-world.md
@@ -158,7 +160,7 @@ $ git push -u origin master
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Here are the steps to merge generated artifacts to &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository:&lt;/p&gt;
+&lt;p&gt;Here are the steps to merge generated artifacts to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo/public
 $ git add .   // only needed to be done the first time

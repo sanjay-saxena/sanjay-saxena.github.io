@@ -160,7 +160,7 @@ $ git push -u origin master
 &lt;p&gt;Here are the steps to merge generated artifacts to &lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd ~/Workdir/&amp;lt;username&amp;gt;-hugo/public
-$ git add .   // only needed to be done the first time
+$ git add .   // only first time after that use &amp;quot;git status&amp;quot; to add new folders
 $ git commit -am &amp;quot;First checkin with Hello World blog&amp;quot;
 $ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;

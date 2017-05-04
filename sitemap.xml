@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sanjay-saxena.github.io/2017/05/reality-technologies/</loc>
+    <lastmod>2017-05-03T12:10:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sanjay-saxena.github.io/2017/04/first/</loc>
     <lastmod>2017-04-06T11:31:32-07:00</lastmod>
   </url>
@@ -13,13 +18,13 @@
   
   <url>
     <loc>https://sanjay-saxena.github.io/blog/</loc>
-    <lastmod>2017-04-06T11:31:32-07:00</lastmod>
+    <lastmod>2017-05-03T12:10:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sanjay-saxena.github.io/</loc>
-    <lastmod>2017-04-06T11:31:32-07:00</lastmod>
+    <lastmod>2017-05-03T12:10:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   

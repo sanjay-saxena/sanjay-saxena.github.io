@@ -7,7 +7,170 @@
     <language>en-us</language>
     <author>Sanjay Saxena</author>
     <copyright>2017 Sanjay Saxena</copyright>
-    <updated>Thu, 06 Apr 2017 11:31:32 PDT</updated>
+    <updated>Wed, 03 May 2017 12:10:00 PDT</updated>
+    
+    
+    <item>
+      <title>Reality Technologies</title>
+      <link>https://sanjay-saxena.github.io/2017/05/reality-technologies/</link>
+      <pubDate>Wed, 03 May 2017 12:10:00 PDT</pubDate>
+      <author>Sanjay Saxena</author>
+      <guid>https://sanjay-saxena.github.io/2017/05/reality-technologies/</guid>
+      <description>
+
+&lt;p&gt;Last week, I attended &lt;a href=&#34;https://www.meetup.com/TechinMotionSiliconValley/events/237767055/?_af=event&amp;amp;_af_eid=237767055&amp;amp;https=on&#34;&gt;Into the Future(Part - II): Transmogrified Reality&lt;/a&gt;
+Meetup in San Jose organized by &lt;a href=&#34;https://twitter.com/Tech_in_Motion&#34;&gt;@techinmotion&lt;/a&gt;.
+Even though I had collaborated on a project that involved Augmented Reality, I
+would consider myself to be a novice in this fast evolving technological
+landscape that is attracting a lot of attention. The intent of this post is to
+help explain Reality Technologies, the vendors, and the use-cases that they are
+addressing.&lt;/p&gt;
+
+&lt;h2 id=&#34;virtual-reality&#34;&gt;Virtual Reality&lt;/h2&gt;
+
+&lt;p&gt;As the name suggests, Virtual Reality provides an immersive experience in a
+make-believe or fictional or  fantasy world that is completely different from
+the real world. It is important to understand that the immersion is achieved by
+deceiving the user&amp;rsquo;s senses of sight and sound to believe that they are in a
+different setting/environment. These experiences are achieved through a
+head-mounted display(HMD) along with a tethered PC with an extremely powerful
+graphics cards or GPUs.&lt;/p&gt;
+
+&lt;p&gt;Most of the Virtual Reality headsets resemble ski goggles and use a pair of screens
+displaying two images side by side, one for each eye. The 3D effect is created
+by placing a set of lenses on top of those screens. The embedded sensors pickup
+the user&amp;rsquo;s head movement and the image is adjusted accordingly.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the VR platforms available in the market:&lt;/p&gt;
+
+&lt;h3 id=&#34;facebook-s-oculus-rift&#34;&gt;Facebook&amp;rsquo;s Oculus Rift&lt;/h3&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/etv_IxVh7cc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;pimax-4k-uhd&#34;&gt;PIMAX 4K UHD&lt;/h3&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/tlPE26glQvc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;htc-vive&#34;&gt;HTC Vive&lt;/h3&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/o5xrMfHNtmU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Currently, the use-cases that are gaining traction with Virtual Reality include
+rich interactive video games, visual learning experience, and training. Lack of
+content and compelling reasons/use-cases for one to be glued to a Virtual Reality
+headset/goggles for an extended period of time during a day are the reasons why
+some people think that Virtual Reality is for a niche audience and may not
+materialize into a huge market. However, with significant investments tied into
+this technology from some of the major companies along with VR experience such
+as &lt;a href=&#34;https://www.si.com/specials/everest-climb-virtual-reality/index.html&#34;&gt;Capturing Everest&lt;/a&gt;
+becoming available, I would think that Virtual Reality is going to be around for
+a while.&lt;/p&gt;
+
+&lt;p&gt;Since the number of Virtual Reality platforms are increasing, it is also becoming a
+challenge for application/game developers to port their applications and games to
+each vendors&amp;rsquo; APIs as the VR device can only run apps that been ported to its SDK.
+To address this fragmentation, a cross-platform architecture called
+&lt;a href=&#34;https://www.khronos.org/openxr/&#34;&gt;OpenXR&lt;/a&gt; is being developed to enable applications
+and games to be written once to run on any VR platform.&lt;/p&gt;
+
+&lt;h2 id=&#34;augmented-reality&#34;&gt;Augmented Reality&lt;/h2&gt;
+
+&lt;p&gt;Unlike Virtual Reality, in Augmented Reality we are dealing with the real world
+that has been modified or enhanced with contextual information by superimposing
+graphics over a view of the real world. In Augmented Reality, the user&amp;rsquo;s senses
+will not be deceived but continue to function in a real, albeit a bit more richer
+and interactive surrounding. For example, in a smartphone&amp;rsquo;s camera held against
+a window, you can see planes headed in the direction but are not visible to the
+naked eye at that point in time. Or, you can look at the temperature and
+the weather data on your bathroom mirror.&lt;/p&gt;
+
+&lt;p&gt;Consumers can get the taste of Augmented Reality technology using either
+smartphone apps or untethered transparent glasses such as Google Glass. Here
+is a youtube video for Google Glass and it&amp;rsquo;s features:&lt;/p&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/4EvNxWhskf8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Some of the popular use-cases that feature Augmented Reality are:&lt;/p&gt;
+
+&lt;h3 id=&#34;pokemon-go&#34;&gt;Pokemon Go&lt;/h3&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/OV_yHc9RwgE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;ikea-concept-kitchen&#34;&gt;IKEA Concept Kitchen&lt;/h3&gt;
+
+&lt;iframe width=&#34;700 &#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/qD60cBQOABY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;ikea-furniture&#34;&gt;IKEA Furniture&lt;/h3&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/vDNzTasuYEw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;mixed-reality&#34;&gt;Mixed Reality&lt;/h2&gt;
+
+&lt;p&gt;Mixed Reality uses the real world as the canvas and overlays it with elements from
+virtual world to create new environments made up of physical and virtual objects
+that can interact. Mixed Reality keeps the real world interactivity aspect of
+Augmented Reality and merges it with the fantasy aspect of Virtual Reality. The
+fact that the objects from the real world and the objects from the virtual world
+can react to each other in real time makes Mixed Reality very compelling.&lt;/p&gt;
+
+&lt;p&gt;With the &lt;a href=&#34;https://www.microsoft.com/en-us/hololens&#34;&gt;HoloLens&lt;/a&gt; initiative, Microsoft
+is betting big on &lt;em&gt;holographic computing&lt;/em&gt; as it opens up Windows Holographic
+operating system to VR headset makers to push it&amp;rsquo;s vision of Mixed Reality where
+VR headsets interact with the HoloLens to create holograms in the real world.&lt;/p&gt;
+
+&lt;p&gt;So, what is is a HoloLens? In simple terms, it is a special headset that has the
+ability to let a user interact with holograms in a real world space such as a
+living room or a board room. Unlike the VR headsets which are tethered, these
+headsets are untethered and can communicate wirelessly with a PC and use
+high-definition lenses for 3D display and spatial sound technology to create an
+immersive yet interactive holographic experience.&lt;/p&gt;
+
+&lt;p&gt;Microsoft has put out some really exciting videos showcasing HoloLens like the
+one below that includes &lt;em&gt;holoportation&lt;/em&gt; as one can interact with holograms of
+family members, who are in a different part of the world, in one&amp;rsquo;s living room:&lt;/p&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/7d59O6cfaM0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Or, play Minecraft on a table:&lt;/p&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/xgakdcEzVwg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Windows 10 will include APIs for developers to create holograms to make holographic
+experiences for the HoloLens.&lt;/p&gt;
+
+&lt;p&gt;Microsoft is working with NASA, car manufacturers, school districts, construction
+companies, gaming companies, etc. to help increase the adoption of HoloLens
+across various segments of the economy.&lt;/p&gt;
+
+&lt;h2 id=&#34;transmogrified-reality&#34;&gt;Transmogrified Reality&lt;/h2&gt;
+
+&lt;p&gt;I hadn&amp;rsquo;t been exposed to this term till I signed up for the aforementioned Meetup.
+While Virtual Reality and other forms are exciting, they require the users to
+strap on headsets for long periods of time which can be fraught with risks. Google&amp;rsquo;s,
+Game Design Chief,  Noah Falstein describes &lt;em&gt;Transmogrified Reality&lt;/em&gt;  as the most
+realistic form of virtual and augmented reality conceivable through our current
+and emerging technologies. Based on the demos in Noahs&amp;rsquo; Game Developer Conference
+2015 presentation, one can surmise that consumers will be experiencing
+Transmogrified Reality via Google&amp;rsquo;s Project Tango tablet. With real time 3D-sensing
+abilities and inexpensive head mounts, Tango will be able to capture it&amp;rsquo;s
+vicinity or the surrounding area and incorporate elements of virtual reality
+into a player&amp;rsquo;s vision while allowing the player move freely around any
+environment in the real world.&lt;/p&gt;
+
+&lt;p&gt;Here is Noah&amp;rsquo;s presentation where he talks about Transmogrified Reality:&lt;/p&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/ncLikwtv7QQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;tango&#34;&gt;Tango&lt;/h3&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;393&#34; src=&#34;https://www.youtube.com/embed/iHN4c7FYXYs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;In conclusion, VR/AR/MR/TR are all incredibly exciting technologies that have
+tremendous potential in not just gaming/entertainment but various other industries
+such as automotive, healthcare, education, space, tourism, marketing, retail etc.&lt;/p&gt;
+</description>
+    </item>
+    
     
     
     <item>
